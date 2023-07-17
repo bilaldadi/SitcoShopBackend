@@ -28,4 +28,4 @@ Route::post('/sendcontactform',[ContactController::class,'sendContactForm']);
 
 Route::get('/siteinfo',[SiteInfoController::class,'GetSiteInfo']);
 
-Route::get('/categories',[CategoryController::class,'GetCategories']);
+Route::get('/allcategories',[CategoryController::class,'AllCategories']);
