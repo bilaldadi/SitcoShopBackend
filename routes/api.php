@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\VisitorController;
 use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\SiteInfoController;
 use App\Http\Controllers\Admin\CategoryController;
+use App\Http\Controllers\Admin\ProductListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,5 @@ Route::post('/sendcontactform',[ContactController::class,'sendContactForm']);
 Route::get('/siteinfo',[SiteInfoController::class,'GetSiteInfo']);
 
 Route::get('/allcategories',[CategoryController::class,'AllCategories']);
+
+Route::get('/productlistbyremark/{remark}',[ProductListController::class,'ProductListByRemark']);
